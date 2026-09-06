@@ -62,13 +62,14 @@ When I type a command, the shell understands it and runs it for me.
 
 Bash is one common shell in Linux.
 
-## 4. systemd
+## 4. systemd (System Daemon)
 
 `systemd` is the default init system in most Linux distributions.
 
 It is the first process started by the kernel (**PID 1**) and is responsible for:
 
 * Starting the operating system
+* Starting all the required other processes 
 * Managing services
 * Restarting failed services
 * Viewing system logs
