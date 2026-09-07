@@ -40,7 +40,7 @@ Terminal is an application that allows you to run the shell commands .
 | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `ps aux`       | List running processes with CPU and memory information; useful for resource troubleshooting                                                                                 |
 | `ps -ef`       | List processes with detailed information, including **PPID (Parent Process ID)** to see which process started another process                                               |
-| `top`          | Show a real-time view of CPU, memory, load, and running processes                                                                                                           |
+| `htop`          | Show a real-time view of CPU, memory, load, and running processes                                                                                                           |
 | `kill -9 2343` | Force-kill process with PID `2343`. Signal reference: `15` graceful stop (default), `9` force kill (can't be ignored), `2` interrupt (like Ctrl+C), `19` pause, `18` resume |
 * * *
 ## Network Troubleshooting 
