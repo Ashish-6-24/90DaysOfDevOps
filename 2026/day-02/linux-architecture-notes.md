@@ -122,7 +122,7 @@ ps aux          # View running processes
 * **systemd** is responsible for booting Linux and managing services.
 * Every running application is a process with its own PID.
 * Understanding these concepts will make Linux troubleshooting much easier.
-* Everything in Linux either a file/directory or a process . 
+* Everything in Linux either a file/directory or a process like Network Settings, Devices (Hard drive,CD-ROM,Printer), All the Commands . 
 
 ---
 
