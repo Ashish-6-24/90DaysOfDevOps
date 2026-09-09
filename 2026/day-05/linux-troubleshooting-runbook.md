@@ -126,4 +126,4 @@ System resources are within normal limits — root disk usage is around 41%, `/v
 
 3. **Investigate deeper:** Review failed login attempts and SSH access rules. Use `journalctl -xeu ssh`, `ssh -vvv`, or `strace -p <PID>` when deeper investigation is needed, then verify the result.
 
-**This drill helped me build a simple troubleshooting habit: capture the baseline → check resources → review logs → find the cause → act safely → verify the result.**
+**This drill helped me build a simple troubleshooting habit: capture environment → inspect resources → read logs → act with evidence.**
