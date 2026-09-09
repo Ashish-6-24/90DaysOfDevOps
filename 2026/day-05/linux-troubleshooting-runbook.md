@@ -42,7 +42,7 @@
 
 `ps -o pid,pcpu,pmem,comm -p 642` - Shows CPU and memory usage for the selected SSH process.
 
-![ps](./images/ps-o.png)
+![ps](./images/ps%20-o.png)
 
 `top -b -n 1 | head -n 20` - Takes a one-time snapshot of CPU, memory, load, and running processes.
 
@@ -52,7 +52,7 @@
 
 `free -h` - Shows total, used, available memory, and swap usage.
 
-![free](./images/free-h.png)
+![free](./images/free%20-h.png)
 
 **Observation:** Around 611 MiB memory is available and swap is unused, so there is no obvious memory pressure.
 
@@ -64,11 +64,11 @@
 
 `df -h` - Checks filesystem space and confirms whether the disk is getting full.
 
-![df-h-full](./images/df-h-full.png)
+![df-h](./images/df-h.png)
 
 `du -sh /var/log` - Shows the total size of `/var/log`. The log directory is small and not a concern.
 
-![du](./images/du.png)
+![du](./images/du%20.png)
 
 `iostat -xz 1` - Shows detailed disk I/O activity and refreshes every second. No unusual I/O wait or disk saturation was observed.
 
@@ -92,7 +92,7 @@
 
 `sudo journalctl -u ssh -n 50` - Shows the latest SSH service logs. The logs contain repeated login attempts from `78.82.199.124` using invalid usernames such as `oracle`, `usuario`, `test`, `user`, and `ftpuser`.
 
-![journalctl-ssh](./images/journalctl-ssh.png)
+![journalctl-ssh](./images/journalctl%20ssh.png)
 
 `tail -20 /var/log/syslog` - Shows the latest system log entries. Most entries are normal, with a few kernel and `fwupd` warnings but no clear critical SSH failure.
 
