@@ -50,5 +50,6 @@ DevOps journey Day 06
 `tail` → read the end of a file
 
 ## Output Screenshot
+![Output](./images/day06.png)
 
 
