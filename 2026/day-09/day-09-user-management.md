@@ -71,7 +71,7 @@ cat /etc/group
 
 ### 📸 Screenshot
 
-![Task 2 Output](images/creating_groups.png)
+![Task 2 Output](images/group_add.png)
 
 ### What I understood
 
@@ -98,7 +98,7 @@ groups professor
 
 ### 📸 Screenshot
 
-![Task 3 Output](images/adding_user_to_groups.png)
+![Task 3 Output](images/assign_user.png)
 
 ### Important thing I learned
 
@@ -143,7 +143,7 @@ ls -l /opt/dev-project
 
 ### 📸 Screenshot
 
-![Task 4 Output](images/shared_files.png)
+![Task 4 Output](images/shared_directory.png)
 
 ### What `sudo -u` means
 
