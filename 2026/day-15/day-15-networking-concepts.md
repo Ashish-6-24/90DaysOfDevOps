@@ -209,6 +209,9 @@ An **IP address** identifies the host/interface.
 
 A **port** identifies the service endpoint on that host.
 
+If an IP address is the building, the Port is the specific apartment number.
+Protocols are the languages spoken inside that apartment.
+
 For Example:
 
 ```text
