@@ -69,7 +69,7 @@ google.com.    268    IN    A    142.251.179.113
 ```
 
 **A Record:** `142.251.179.113`  
-**TTL:** `268 seconds`
+**TTL(Time to Live ) :** `268 seconds`
 
 ###   📸 Screenshot 
 
