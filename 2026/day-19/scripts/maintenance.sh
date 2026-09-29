@@ -2,17 +2,16 @@
 
 set -euo pipefail
 
-LOG_FILE="$HOME/day-19/maintenance.log"
+LOG_FILE="/home/ubuntu/maintenance.log"
 
 log_rotation(){
-	"$HOME/day-19/scripts/log_rotation.sh" \
-	"$HOME/day-19/logs" >> "$LOG_FILE" 2>&1
+	/home/ubuntu/log_rotation.sh \
+	/home/ubuntu/app-logs >> "$LOG_FILE" 2>&1
 }
 
 backup(){
-	"$HOME/day-19/scripts/backup.sh" \
-	"$HOME/day-19/practice_sh" \
-	"$HOME/day-19/backups" >> "$LOG_FILE" 2>&1
+	/home/ubuntu/backup.sh \
+	/home/ubuntu/backups >> "$LOG_FILE" 2>&1
 }
 
 main(){
