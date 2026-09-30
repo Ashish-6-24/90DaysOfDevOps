@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-LOG_FILE="/home/ubuntu/maintenance.log"
+LOG_FILE="/var/log/maintenance.log"
 
 log_rotation(){
 	/home/ubuntu/log_rotation.sh \
