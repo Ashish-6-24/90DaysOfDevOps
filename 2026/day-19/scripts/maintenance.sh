@@ -11,6 +11,7 @@ log_rotation(){
 
 backup(){
 	/home/ubuntu/backup.sh \
+	/home/ubuntu/project \
 	/home/ubuntu/backups >> "$LOG_FILE" 2>&1
 }
 
