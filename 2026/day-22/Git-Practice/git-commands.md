@@ -1,6 +1,6 @@
 # Git Commands Cheat Sheet 🚀
 
-A quick-reference guide for the Git commands I practiced during **Day 22** of my DevOps learning journey.
+A quick-reference guide for the Git commands I practiced during my DevOps learning journey.
 
 ---
 
@@ -57,3 +57,82 @@ A quick-reference guide for the Git commands I practiced during **Day 22** of my
 | 17 | `git show` | Shows the details and changes introduced by a specific commit. |
 
 ---
+
+## 📌 Day 23 – Git Branching & GitHub
+
+### 🌿 Branch Management
+
+| # | Command | Description |
+|---|---|---|
+| 18 | `git branch` | Lists all local branches. |
+| 19 | `git branch feature-1` | Creates a new branch called `feature-1`. |
+| 20 | `git switch feature-1` | Switches to an existing branch. |
+| 21 | `git switch -c feature-2` | Creates a new branch and switches to it in one command. |
+| 22 | `git checkout main` | Switches to the `main` branch using the older checkout command. |
+| 23 | `git checkout -b feature-1` | Creates a new branch and switches to it in one command. |
+| 24 | `git switch main` | Switches back to the `main` branch. |
+| 25 | `git branch -d feature-2` | Deletes a local branch that is no longer needed. |
+
+---
+
+### 🔄 `git switch` vs `git checkout`
+
+| Command | Description |
+|---|---|
+| `git switch <branch>` | Switches to an existing branch. |
+| `git switch -c <branch>` | Creates and switches to a new branch. |
+| `git checkout <branch>` | Older command used to switch branches. |
+| `git checkout -b <branch>` | Older command that creates and switches to a new branch. |
+
+---
+
+### ☁️ GitHub & Remote Repository
+
+| # | Command | Description |
+|---|---|---|
+| 26 | `git remote -v` | Shows the remote repositories connected to the local repository. |
+| 27 | `git remote add origin <github-repo-url>` | Connects the local repository to a GitHub remote named `origin`. |
+| 28 | `git branch -M main` | Renames the current branch to `main`. |
+| 29 | `git push -u origin main` | Pushes the local `main` branch to GitHub and sets its upstream tracking branch. |
+| 30 | `git push -u origin feature-1` | Pushes the `feature-1` branch to GitHub and sets its upstream tracking branch. |
+
+---
+
+### 🔗 `origin` vs `upstream`
+
+**`origin`** → Usually points to my own GitHub repository or personal fork, where I have read and write access.
+
+**`upstream`** → Usually points to the original repository, which I use to get the latest changes and keep my fork updated.
+
+```text
+upstream → Original Repository
+                ↓
+              Fork
+                ↓
+origin → My GitHub Repository
+```
+
+| # | Command | Description |
+|---|---|---|
+| 31 | `git remote add upstream <original-repo-url>` | Adds the original repository as a remote named `upstream`. |
+| 32 | `git fetch upstream` | Downloads the latest changes and branch information from the original repository. |
+| 33 | `git merge upstream/main` | Merges the latest `main` changes from `upstream` into the current branch. |
+
+---
+
+### 🔄 Fetch & Pull
+
+| # | Command | Description |
+|---|---|---|
+| 34 | `git fetch origin` | Downloads changes from the remote without merging them into the current branch. |
+| 35 | `git pull origin main` | Downloads changes from GitHub and integrates them into the current branch. |
+
+---
+
+### 📦 Clone
+
+| # | Command | Description |
+|---|---|---|
+| 36 | `git clone <repository-url>` | Copies a remote repository from GitHub to the local machine. |
+
+> 💡 **Fork** is a GitHub feature, not a Git command. It creates your own copy of another repository on GitHub.
