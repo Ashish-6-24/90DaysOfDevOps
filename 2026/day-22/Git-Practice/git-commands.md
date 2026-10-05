@@ -136,3 +136,69 @@ origin → My GitHub Repository
 | 36 | `git clone <repository-url>` | Copies a remote repository from GitHub to the local machine. |
 
 > 💡 **Fork** is a GitHub feature, not a Git command. It creates your own copy of another repository on GitHub.
+
+---
+
+# 📌 Day 24 – Advanced Git: Merge, Rebase, Stash & Cherry-Pick
+
+## 🔀 Merge
+
+| # | Command | Description |
+|---|---|---|
+| 37 | `git merge <branch>` | Merges the specified branch into the branch I am currently on. |
+| 38 | `git merge --squash <branch>` | Combines the changes from the feature branch into the current branch without creating the source branch's individual commits; I create the final commit separately. |
+
+---
+
+## ⚠️ Merge Conflict Resolution
+
+| # | Command | Description |
+|---|---|---|
+| 39 | `git merge <branch>` | Starts the merge and may stop when Git finds conflicting changes. |
+| 40 | `git add <filename>` | Marks a manually resolved conflicted file as resolved. |
+| 41 | `git commit -m "<message>"` | Completes the merge after all conflicts have been resolved and staged. |
+
+---
+
+## 🧭 Rebase
+
+| # | Command | Description |
+|---|---|---|
+| 42 | `git rebase <branch>` | Replays the current branch's commits on top of the specified branch. |
+
+
+## 🧹 Squash Merge
+
+| # | Command | Description |
+|---|---|---|
+| 43 | `git merge --squash <branch>` | Collects all changes from the feature branch into the working tree/staging area without creating the final commit automatically. |
+| 44 | `git commit -m "<message>"` | Creates the single final commit after a squash merge. |
+
+
+## 📦 Git Stash
+
+| # | Command | Description |
+|---|---|---|
+| 45 | `git stash push -m "<message>"` | Temporarily saves tracked uncommitted changes and labels the stash with a message. |
+| 46 | `git stash list` | Lists all saved stash entries. |
+| 47 | `git stash pop` | Restores the latest stash and normally removes that stash entry after successful application. |
+| 48 | `git stash apply stash@{N}` | Restores a specific stash while keeping that stash entry in the stash list. |
+
+
+### 🧠 `pop` vs `apply`
+
+| Command | Restores changes | Keeps stash entry |
+|---|---:|---:|
+| `git stash pop` | ✅ | ❌ Normally removed after success |
+| `git stash apply stash@{N}` | ✅ | ✅ |
+
+> 💡 The stash numbering starts at `0`, so `stash@{0}` is normally the newest entry.
+
+---
+
+## 🍒 Cherry-Pick
+
+| # | Command | Description |
+|---|---|---|
+| 49 | `git cherry-pick <commit-hash>` | Applies the changes introduced by one specific commit to the current branch as a new commit. |
+
