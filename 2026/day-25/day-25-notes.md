@@ -135,13 +135,13 @@ CI/CD + automated tests + feature flags
 # 🎯 4. My Choices
 
 ### 🚀 Startup shipping fast
-**GitHub Flow** — simple, low overhead, fast releases.
+**GitHub Flow** simple, low overhead, fast releases.
 
 ### 🏢 Large team with scheduled releases
-**GitFlow** — structured release and version management.
+**GitFlow** structured release and version management.
 
 ### ☸️ Open-source example
-**Kubernetes** — main-based PR workflow with release-specific branches/processes; a practical hybrid approach.
+**Kubernetes** main-based PR workflow with release-specific branches/processes; a practical hybrid approach.
 
 ---
 
