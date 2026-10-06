@@ -202,3 +202,28 @@ origin → My GitHub Repository
 |---|---|---|
 | 49 | `git cherry-pick <commit-hash>` | Applies the changes introduced by one specific commit to the current branch as a new commit. |
 
+# 📌 Day 25 – Git Reset & Revert
+
+## 🔄 Git Reset
+
+| # | Command | Description |
+|---|---|---|
+| 50 | `git reset --soft HEAD~1` | Moves `HEAD` back one commit and keeps the changes **staged**. |
+| 51 | `git reset --mixed HEAD~1` | Moves `HEAD` back one commit and keeps the changes **unstaged**. |
+| 52 | `git reset --hard HEAD~1` | Moves `HEAD` back one commit and resets the staging area and working files. |
+| 53 | `git reflog` | Shows recent `HEAD` movements and helps find commits after a reset. |
+
+> ⚠️ `git reset --hard` can permanently remove uncommitted work. Use it carefully.
+
+---
+
+## ↩️ Git Revert
+
+| # | Command | Description |
+|---|---|---|
+| 54 | `git revert <commit-hash>` | Creates a new commit that undoes the changes from an earlier commit. |
+| 55 | `git revert --continue` | Continues the revert after a conflict is resolved. |
+| 56 | `git revert --abort` | Cancels the revert and returns to the state before the revert started. |
+
+> 💡 Easy rule: **Reset for local history. Revert for shared/pushed history.**
+
