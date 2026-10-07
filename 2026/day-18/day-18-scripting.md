@@ -1,4 +1,4 @@
-# Day 18: Shell Scripting: Functions and ntermediate Concepts
+# Day 18: Shell Scripting: Functions and Intermediate Concepts
 
 > **#90DaysOfDevOps | Bash practice**
 
