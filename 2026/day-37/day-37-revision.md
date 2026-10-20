@@ -4,27 +4,6 @@
 
 Review and reinforce the Docker skills covered in Days 29–36. Use this file to record what I can demonstrate, what needs more practice, and the concepts I should revisit before moving on.
 
-## Self-Assessment Checklist
-
-Mark **one status per row** after trying the task or explaining the concept from memory. These are intentionally left unmarked so the assessment reflects actual practice rather than an assumed skill level.
-
-| Skill | Can do | Shaky | Haven't done |
-|---|:---:|:---:|:---:|
-| Run a Docker Hub image interactively and in detached mode | [ ] | [ ] | [ ] |
-| List, stop, remove containers, and remove unused images | [ ] | [ ] | [ ] |
-| Explain image layers and build-cache behavior | [ ] | [ ] | [ ] |
-| Write a Dockerfile using `FROM`, `RUN`, `COPY`, `WORKDIR`, and `CMD` | [ ] | [ ] | [ ] |
-| Explain `CMD` vs `ENTRYPOINT` | [ ] | [ ] | [ ] |
-| Build and tag a custom image | [ ] | [ ] | [ ] |
-| Create and use a named volume | [ ] | [ ] | [ ] |
-| Use a bind mount for local development | [ ] | [ ] | [ ] |
-| Create a custom network and connect containers | [ ] | [ ] | [ ] |
-| Write a Compose file for a multi-container application | [ ] | [ ] | [ ] |
-| Configure Compose environment variables and a `.env` file | [ ] | [ ] | [ ] |
-| Write a multi-stage Dockerfile | [ ] | [ ] | [ ] |
-| Tag and push an image to Docker Hub | [ ] | [ ] | [ ] |
-| Configure healthchecks and service startup dependencies | [ ] | [ ] | [ ] |
-
 ## Quick-Fire Questions and Answers
 
 ### 1. What is the difference between an image and a container?
