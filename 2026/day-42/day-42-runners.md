@@ -1,4 +1,4 @@
-# Day 42 – Understanding GitHub Actions Runners
+# Day 42 - Understanding GitHub Actions Runners
 
 ## 1. GitHub-Hosted Runners
 
@@ -45,7 +45,6 @@ jobs:
 
 GitHub maintains these machines and their runner images. The three jobs use separate operating-system environments and may execute in parallel, depending on runner availability.
 
-![GitHub-hosted runner jobs](screenshots/runner-os.png)
 
 ## 2. Checking Available Tools
 
@@ -75,11 +74,6 @@ jobs:
 
 Pre-installed software saves setup time and reduces the number of installation steps in a pipeline. Available versions can change when GitHub updates its runner image, so I should check the output from my run.
 
-References:
-- [GitHub-hosted runners](https://docs.github.com/en/actions/reference/runners/github-hosted-runners)
-- [Ubuntu runner image software inventory](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md)
-
-![Ubuntu tool versions](screenshots/runner-tools.png)
 
 ## 3. Registering a Self-Hosted Runner
 
@@ -94,8 +88,6 @@ Setup summary:
 5. Confirm that the runner appears online and ready to accept work in GitHub.
 
 The registration commands and token must come from the repository's runner setup page. They should not be added to this document or committed to source control.
-
-![Self-hosted runner ready in GitHub](screenshots/self-hosted-idle.png)
 
 ## 4. Running a Job on My Own Runner
 
@@ -127,8 +119,6 @@ jobs:
 ```
 
 After the run, I should check the file on the runner machine at `~/day42-runner-proof.txt` (assuming the runner service uses that user's home directory). The job log and the file on the machine confirm that the job ran on my own infrastructure.
-
-![Job running on the self-hosted runner](screenshots/self-hosted-job.png)
 
 ## 5. Selecting a Runner by Label
 
@@ -162,12 +152,5 @@ GitHub will look for a runner matching all the specified labels. I should trigge
 - Labels direct jobs to runners with the required characteristics.
 - Checking job logs and verifying the proof file on the machine helps confirm where the job executed.
 
-## Evidence Checklist
-
-- [ ] Screenshot showing the Ubuntu, Windows, and macOS jobs.
-- [ ] Screenshot containing the Docker, Python, Node.js, and Git versions.
-- [ ] Screenshot of the self-hosted runner shown as online/idle in GitHub.
-- [ ] Screenshot of a successful job on the self-hosted runner.
-- [ ] Re-ran the self-hosted workflow using the `my-linux-runner` label.
 
 #90DaysOfDevOps #DevOpsKaJosh #TrainWithShubham
