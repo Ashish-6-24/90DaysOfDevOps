@@ -129,7 +129,7 @@ Build the Chattingo frontend image
                           v
                     Frontend container
 ```
-
+[![Docker Build & Push](https://github.com/Ashish-6-24/ci-cd-practice/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/Ashish-6-24/ci-cd-practice/actions/workflows/docker-publish.yml) 
 ## Verification Checklist
 
 - [ ] The `docker-publish.yml` workflow runs in the Actions tab.
