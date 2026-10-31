@@ -128,6 +128,7 @@ permissions:
 - Semgrep SAST: Completed.
 - Hadolint: Completed.
 - OWASP ZAP: Completed.
+
 [![DevSecOps Pipeline](https://github.com/Ashish-6-24/chattingo/actions/workflows/devsecops_pipeline.yml/badge.svg)](https://github.com/Ashish-6-24/chattingo/actions/workflows/devsecops_pipeline.yml)
 
 **Trivy scan screenshot:**
