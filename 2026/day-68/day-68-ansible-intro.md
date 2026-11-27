@@ -647,5 +647,5 @@ Before committing this document:
 - Keep public IP addresses redacted if the repository is public.
 - Never add the private SSH key to Git.
 
-**Challenge:** Day 68, 90DaysOfDevOps / AI-Powered UDAAN
+**Challenge:** Day 68, 90DaysOfDevOps / AI-Powered
 **Focus:** Ansible, configuration management, AWS EC2, Ubuntu, RHEL, SSH, inventory, ad-hoc commands, and infrastructure automation.
